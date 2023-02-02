@@ -15,16 +15,23 @@ function Activities() {
 
   return (
     <div className={styles.general}>
-      {activePopUp && <PopUp setActivePopUp={setActivePopUp}/>}
-      <div class={styles.card1}>
-        <p><span>HOVER ME</span></p>
-        <p><span>HOVER ME</span></p>
-        <p><span>HOVER ME</span></p>
-        <p><span>HOVER ME</span></p>
-        <p><span>HOVER ME</span></p>
-        <p><span>HOVER ME</span></p>
+      {activePopUp && <PopUp setActivePopUp={setActivePopUp} />}
+      <div className={styles["cards-container"]}>
+        <div class={styles.card1}>
+          <div><p><span>HOVER ME</span></p></div>
+          <div><p><span>HOVER ME</span></p></div>
+          <div><p><span>HOVER ME</span></p></div>
+          <div><p><span>HOVER ME</span></p></div>
+          <div><p><span>HOVER ME</span></p></div>
+        </div>
+        <div class={styles.card1}>
+          <div><p><span>HOVER ME</span></p></div>
+          <div><p><span>HOVER ME</span></p></div>
+          <div><p><span>HOVER ME</span></p></div>
+          <div><p><span>HOVER ME</span></p></div>
+          <div><p><span>HOVER ME</span></p></div>
+        </div>
       </div>
-      
     </div>
   )
 }

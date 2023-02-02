@@ -1,3 +1,11 @@
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
 .card1 {
   width: 80%;
   height: 20rem;
@@ -8,11 +16,10 @@
   padding: .4em;
 }
 
-.card1 p {
+.card1 div p {
   height: 100%;
   flex: 1;
   overflow: hidden;
-  cursor: pointer;
   border-radius: 2px;
   transition: all .5s;
   background: #212121;
@@ -23,11 +30,11 @@
   cursor: url('../assets/sword_focus_32x32.png'), default;
 }
 
-.card1 p:hover {
+.card1 div:hover {
   flex: 2;
 }
 
-.card1 p span {
+.card1 div p span {
   min-width: 14em;
   padding: .5em;
   text-align: center;
@@ -38,6 +45,6 @@
   letter-spacing: .1em;
 }
 
-.card1 p:hover span {
+.card1 div p:hover span {
   transform: rotate(0);
 }
