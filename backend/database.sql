@@ -93,10 +93,10 @@ CREATE TABLE `users` (
   `id` int NOT NULL AUTO_INCREMENT,
   `picture` varchar(255),
   `firstname` varchar(255) NOT NULL,
-  `lasttname` varchar(255) NOT NULL,
-  `email`varchar(800) NOT NULL,
+  `lastname` varchar(255) NOT NULL,
+  `mail`varchar(800) NOT NULL,
   `password`varchar(255) NOT NULL,
-  `description` text NOT NULL,
+  `description` text,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4;
 

@@ -1,11 +1,11 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-import PopUp from './PopUp';
-import Registration from './Registration';
+import PopUp from "./PopUp";
+import Registration from "./Registration";
 
-import styles from '../styles/Activities.module.css';
+import styles from "../styles/Activities.module.css";
 
 const backEndURL = import.meta.env.VITE_BACKEND_URL;
 
@@ -15,7 +15,8 @@ function Activities() {
   const [registration, setRegistration] = useState(false);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/activities')
+    axios
+      .get("http://localhost:5000/activities")
       .then((res) => setActivities(res.data))
   }, []);
 
@@ -64,7 +65,7 @@ function Activities() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Activities;
