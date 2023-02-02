@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import Navbar from "../components/Navbar";
 import Earth from "../components/Earth";
 
 import styles from "../styles/Home.module.css";
@@ -11,12 +12,13 @@ function Home() {
 
   const onPressTravel = () => {
     setTimeout(() => {
-      navigate("/HomeMA");
+      navigate("/activities");
     }, 1000);
   };
 
   return (
     <div className={styles.container}>
+      <Navbar />
       <div className={styles["period-choosed"]}>
         {period === ""
           ? "Cliquez sur la planete pour choisir une période"

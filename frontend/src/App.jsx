@@ -1,19 +1,17 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import HomeMA from "./pages/HomeMA";
+import Activities from "./components/Activities";
 
 import "./styles/App.css";
 
 function App() {
   return (
     <>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/HomeMA" element={<HomeMA />} />
+        <Route path="/activities" element={<Activities />} />
       </Routes>
     </>
   );
