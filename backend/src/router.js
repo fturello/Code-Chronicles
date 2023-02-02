@@ -24,6 +24,6 @@ const userControllers = require("./controllers/userControllers");
 
 router.get("/users", userControllers.browse);
 router.get("/users/:id", userControllers.read);
-router.post("/items", itemControllers.add);
+router.post("/users", itemControllers.add);
 
 module.exports = router;
