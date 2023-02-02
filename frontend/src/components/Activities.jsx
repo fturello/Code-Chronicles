@@ -29,4 +29,4 @@ function Activities() {
   )
 }
 
-export default Activities
+export default Activities;

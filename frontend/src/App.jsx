@@ -5,7 +5,6 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Inscription from "./pages/Inscription";
-import Activities from "./components/Activities";
 import Friends from "./pages/Friends";
 
 import "./styles/App.css";
