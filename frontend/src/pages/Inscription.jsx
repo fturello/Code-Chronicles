@@ -1,8 +1,42 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import styles from "../styles/Inscription.module.css";
 
 function Inscription() {
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [mail, setMail] = useState("");
+  const [password, setPassword] = useState("");
   const [showLoginForm, setShowLoginForm] = useState(false);
+
+  const handleFirstname = (e) => {
+    setFirstname(e.target.value);
+  };
+  const handleLastname = (e) => {
+    setLastname(e.target.value);
+  };
+  const handleMail = (e) => {
+    setMail(e.target.value);
+  };
+  const handlePass = (e) => {
+    setPassword(e.target.value);
+  };
+  const navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post("http://localhost:5000/user", {
+        firstname,
+        lastname,
+        mail,
+        password,
+      })
+      .then(() => {
+        navigate("/welcome");
+      })
+      .catch((err) => console.error(err));
+  };
 
   return (
     <div className={styles.contCard}>
@@ -33,17 +67,45 @@ function Inscription() {
           <div>
             <h2 className={styles.cardH2}>Inscription</h2>
             <form>
-              <label htmlFor="firstName">Prénom</label>
-              <input type="text" name="firstName" id="firstName" />
+              <label htmlFor="firstname">Prénom</label>
+              <input
+                onChange={handleFirstname}
+                value={firstname}
+                type="text"
+                name="firstname"
+                id="firstname"
+              />
               <label htmlFor="lastName">Nom</label>
-              <input type="text" name="lastName" id="lastName" />
+              <input
+                onChange={handleLastname}
+                value={lastname}
+                type="text"
+                name="lastname"
+                id="lastname"
+              />
               <label htmlFor="mail">E-Mail</label>
-              <input type="text" name="mail" id="mail" />
+              <input
+                onChange={handleMail}
+                value={mail}
+                type="text"
+                name="mail"
+                id="mail"
+              />
               <label htmlFor="password">Choississez votre mot de passe</label>
-              <input type="password" id="password" name="password" />
+              <input
+                onChange={handlePass}
+                value={password}
+                type="password"
+                id="password"
+                name="password"
+              />
               <label htmlFor="password">Répéter votre mot de passe</label>
               <input type="password" id="password" name="password" />
-              <button type="button" className={styles["btn-travel"]}>
+              <button
+                type="button"
+                onClick={handleSubmit}
+                className={styles["btn-travel"]}
+              >
                 Inscription
               </button>
             </form>
