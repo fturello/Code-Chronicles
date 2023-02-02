@@ -18,18 +18,61 @@ function Activities() {
       {activePopUp && <PopUp setActivePopUp={setActivePopUp} />}
       <div className={styles["cards-container"]}>
         <div class={styles.cards}>
-          <div>
+          <div className={styles.card}>
+            <div className={styles.presentation}>
+            <h1>
+              <span className={styles.span}>ALLER AU BAL
+              </span>
+            </h1>
+            <p>Participez à des rencontres légères et valsez à droite ou à gauche selon ce que votre coeur vous dit (activité adaptative selon votre rang)</p>
+            <button>Ça m'intéresse !</button>
+            </div>
+            <img className={styles["activity-image"]} src='src/assets/Bal1.png' alt='' />
+          </div>
+          <div className={styles.card}>
+            <div className={styles.presentation}>
             <p>
               <span className={styles.span}>
                 HOVER ME
               </span>
             </p>
+            <p>Participez</p>
+            </div>
             <img className={styles["activity-image"]} src='src/assets/Bal1.png' alt='' />
           </div>
-          <div><p><span className={styles.span}>HOVER ME</span></p></div>
-          <div><p><span className={styles.span}>HOVER ME</span></p></div>
-          <div><p><span className={styles.span}>HOVER ME</span></p></div>
-          <div><p><span className={styles.span}>HOVER ME</span></p></div>
+          <div className={styles.card}>
+            <div className={styles.presentation}>
+            <p>
+              <span className={styles.span}>
+                ALLER AU BAL
+              </span>
+            </p>
+            <p>Participez à des rencontres légères et valsez à droite ou à gauche selon ce que votre coeur vous dit (activité adaptative selon votre rang)</p>
+            </div>
+            <img className={styles["activity-image"]} src='src/assets/Bal1.png' alt='' />
+          </div>
+          <div className={styles.card}>
+            <div className={styles.presentation}>
+            <p>
+              <span className={styles.span}>
+                HOVER ME
+              </span>
+            </p>
+            <p>Participez</p>
+            </div>
+            <img className={styles["activity-image"]} src='src/assets/Bal1.png' alt='' />
+          </div>
+          <div className={styles.card}>
+            <div className={styles.presentation}>
+            <p>
+              <span className={styles.span}>
+                HOVER ME
+              </span>
+            </p>
+            <p>Participez</p>
+            </div>
+            <img className={styles["activity-image"]} src='src/assets/Bal1.png' alt='' />
+          </div>
         </div>
         <div class={styles.cards}>
           <div><p><span className={styles.span}>HOVER ME</span></p></div>

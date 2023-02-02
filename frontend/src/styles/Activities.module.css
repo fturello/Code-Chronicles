@@ -10,13 +10,11 @@
   width: 80%;
   height: 20rem;
   border-radius: 10px;
-  background: #6c645c;
   display: flex;
-  gap: 10px;
-  padding: .4em;
 }
 
-.cards div {
+.card {
+  position: relative;
   background: white;
   border-style: solid;
   border-color: black;
@@ -32,18 +30,69 @@
   transform: rotate(-90deg);
 }
 
-.cards div:hover {
-  flex: 3;
-  transform: rotate(0);
-}
-
 .activity-image {
+  position: absolute;
+  z-index: 10;
   height:100%;
-  transform: rotate(90);
+  overflow: visible;
+  transform: rotate(90deg);
+  transition: .5s;
 }
 
-.cards > div > p {
-  background: #212121;
+.presentation {
+  position:absolute;
+  left:0;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 40%;
+  padding: var(--spacing);
+  opacity:0%;
+  transition: 0.8s;
+}
+
+.card h1 {
+  font-size: smaller;
+}
+
+.card p {
+  font-size: 0.8rem;
+}
+
+.presentation>button {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #fff, #f8eedb);
+  border: 0 solid #e5e7eb;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: var(--dark-brown);
+  column-gap: 1rem;
+  cursor: url('../assets/sword_focus_32x32.png'), default;
+  display: flex;
+  font-family: var(--text-font);
+  font-size: 70%;
+  font-weight: 400;
+  line-height: 5px;
+  margin: 0;
+  outline: 2px solid transparent;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-transform: none;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
+}
+
+.presentation>button:active {
+  background-color: #f3f4f6;
+  box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15), 0px 1px 1px rgba(81, 41, 10, 0.15);
+  transform: translateY(0.125rem);
+}
+
+.presentation>button:focus {
+  box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
 }
 
 .span {
@@ -52,4 +101,26 @@
   text-align: center;
   color: #ecb494;
   letter-spacing: .1em;
+}
+
+.card:hover {
+  z-index:9;
+  flex: 3;
+  transform: rotate(0) scale(1.4, 1.4);
+}
+
+.card:hover p {
+  font-size: 0.8rem;
+}
+
+.card:hover .presentation {
+  opacity:100%;
+  transition: 0.8s;
+  background:linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+
+.card:hover > .activity-image {
+  z-index: -1;
+  transform: rotate(0) translate(45%, 0);
+  opacity: linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
 }
