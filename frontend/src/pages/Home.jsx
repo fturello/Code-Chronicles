@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Earth from "../components/Earth";
@@ -20,6 +20,18 @@ function Home() {
     }, 1000);
   };
 
+  const [dateRet, setDateRet] = useState(2023);
+
+  useEffect(() => {
+    const date = setInterval(() => {
+      setDateRet(dateRet - 1);
+    }, 700);
+
+    return () => {
+      clearInterval(date);
+    };
+  }, [dateRet]);
+
   return (
     <div className={styles.container}>
       <div className={styles.nav}>
@@ -30,6 +42,7 @@ function Home() {
           ? "Cliquez sur la planete pour choisir une période"
           : `Periode choisie : ${period}`}
       </div>
+      <p>{dateRet}</p>
       <Earth setPeriod={setPeriod} />
       {period !== "" && (
         <button
