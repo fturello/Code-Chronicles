@@ -6,7 +6,6 @@ import styles from "../styles/Earth.module.css";
 
 function Earth({ setPeriod }) {
   const [showPeriods, setShowPeriods] = useState(false);
-  const [duration, setDuration] = useState(5295824);
 
   const onPressPlanet = () => {
     setShowPeriods(!showPeriods);
@@ -29,9 +28,6 @@ function Earth({ setPeriod }) {
         onKeyDown={onPressPlanet}
         role="button"
         tabIndex="0"
-        style={{
-          animationDuration: `${duration}s`,
-        }}
       >
         {" "}
       </div>

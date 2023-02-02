@@ -8,9 +8,14 @@ import styles from "../styles/Home.module.css";
 
 function Home() {
   const [period, setPeriod] = useState("");
+  const [duration, setDuration] = useState(52924);
   const navigate = useNavigate();
 
   const onPressTravel = () => {
+    document.documentElement.style.setProperty(
+      "--animation-duration",
+      `${duration}s`
+    );
     setTimeout(() => {
       navigate("/activities");
     }, 1000);
