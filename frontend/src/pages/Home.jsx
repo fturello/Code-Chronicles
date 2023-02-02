@@ -1,11 +1,17 @@
 import React from "react";
-import cursorImage from "../assets/sword_32x32.png";
+import { Link } from 'react-router-dom';
 
 import styles from "../styles/Home.module.css";
 
 function Home() {
   return (
     <div className={styles.container}>
+      <Link to="/">
+          Home
+        </Link>
+        <Link to="/activities">
+          Activities
+        </Link>
       <div>Home</div>
     </div>
   );
