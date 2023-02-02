@@ -29,6 +29,9 @@ function Earth({ setPeriod }) {
         onKeyDown={onPressPlanet}
         role="button"
         tabIndex="0"
+        style={{
+          animationDuration: `${duration}s`,
+        }}
       >
         {" "}
       </div>

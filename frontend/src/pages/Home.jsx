@@ -18,7 +18,9 @@ function Home() {
 
   return (
     <div className={styles.container}>
-      <Navbar />
+      <div className={styles.nav}>
+        <Navbar />
+      </div>
       <div className={styles["period-choosed"]}>
         {period === ""
           ? "Cliquez sur la planete pour choisir une période"

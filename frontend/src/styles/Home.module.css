@@ -7,7 +7,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* height: 100%; */
+}
+
+.nav {
+  align-self: flex-start;
 }
 
 .period-choosed {
@@ -16,7 +19,6 @@ body {
   margin-bottom: 4rem;
 }
 
-/* CSS */
 .btn-travel {
   justify-content: center;
   align-items: center;
@@ -50,10 +52,4 @@ body {
   fill: #06f;
   transform: translateY(4px);
   transition: 100ms;
-}
-
-@media (min-width: 768px) {
-  .btn-travel {
-    min-width: 170px;
-  }
 }
