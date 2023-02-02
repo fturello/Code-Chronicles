@@ -8,7 +8,7 @@ import styles from "../styles/Home.module.css";
 
 function Home() {
   const [period, setPeriod] = useState("");
-  const [duration, setDuration] = useState(52924);
+  const [duration, setDuration] = useState(22921);
   const navigate = useNavigate();
 
   const onPressTravel = () => {
