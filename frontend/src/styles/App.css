@@ -21,3 +21,17 @@ body {
   font-weight: 400;
   height: 100%;
 }
+
+:root {
+  --light: #fffef7;
+  --dark: #2a2929;
+  --shadow: #8d8b86;
+  --light-shadow: rgba(255, 255, 255, 0.3);
+
+  --text-font: "Karla", sans-serif;
+  --title-font: "Montserrat", sans-serif;
+
+  --spacing: 8px;
+  --spacing-lg: calc(var(--spacing) * 2);
+  --spacing-xl: calc(var(--spacing) * 4);
+}
