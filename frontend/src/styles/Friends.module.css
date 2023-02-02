@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  margin: 10rem;
+}
+
+.card {
+  width: 350px;
+  height: 450px;
+  background: #fc5e5e;
+  position: relative;
+  margin: 10px auto;
+  box-shadow: 0 30px 7px -5px rgba(0, 0, 0, 0.4);
+}
+
+.card:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  border-left: 175px solid transparent;
+  border-right: 175px solid transparent;
+  border-bottom: 25px solid #fc5e5e;
+}
+
+.card:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  border-left: 175px solid transparent;
+  border-right: 175px solid transparent;
+  border-top: 25px solid #fc5e5e;
+}
