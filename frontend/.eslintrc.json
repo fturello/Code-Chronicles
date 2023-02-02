@@ -3,10 +3,7 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "plugin:react/recommended",
-    "plugin:prettier/recommended"
-  ],
+  "extends": ["plugin:react/recommended", "plugin:prettier/recommended"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -16,23 +13,9 @@
   },
   "plugins": ["react", "import"],
   "rules": {
-    "no-console": "off",
-    "no-restricted-syntax": [
-      "error",
-      {
-        "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(error|warn)$/]",
-        "message": "You can only call the error() and warn() functions from the console object"
-      }
-    ],
     "react/react-in-jsx-scope": "off",
     "react/jsx-one-expression-per-line": "off",
-    "react/no-unescaped-entities": "off",
-    "jsx-a11y/label-has-associated-control": [
-      "error",
-      {
-        "assert": "either"
-      }
-    ]
+    "react/no-unescaped-entities": "off"
   },
   "settings": {
     "import/resolver": {

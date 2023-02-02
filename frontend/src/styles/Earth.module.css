@@ -1,0 +1,118 @@
+:root {
+  --animation-duration: 5295824s;
+}
+
+.earth,
+.earth:before,
+.earth:after {
+  height: 47vmin;
+  width: 47vmin;
+  border-radius: 100vw;
+  will-change: transform;
+  margin: 0 auto;
+}
+
+.earth {
+  box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.earth,
+.earth:before {
+  animation-name: myrotate;
+  animation-duration: 150s;
+}
+
+.earth,
+.earth:before,
+.earth:after {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.earth:before,
+.earth:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.earth:before {
+  box-shadow: inset 20px 20px 100px 00px rgba(0, 0, 0, 0.5),
+    0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.earth:after {
+  filter: saturate(2.5);
+  background: linear-gradient(rgba(0, 0, 0, 1), transparent),
+    url("../assets/earth.png");
+  box-shadow: inset -20px -20px 14px 2px rgba(0, 0, 0, 0.2);
+  animation-name: myopacity;
+  animation-duration: var(--animation-duration)
+}
+
+.earth:hover {
+  cursor: pointer;
+}
+
+@keyframes myrotate {
+  0% {
+    transform: rotatez(180deg);
+  }
+
+  100% {
+    transform: rotatez(360deg);
+  }
+}
+
+@keyframes myopacity {
+  0% {
+    background-position: 0px;
+    transform: rotatez(0deg);
+  }
+
+  50% {
+    background-position: 100000000px;
+  }
+
+  100% {
+    background-position: 0;
+    transform: rotatez(-360deg);
+  }
+}
+
+.periods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(4, 5, 23, 0.169);
+  backdrop-filter: blur(0.8rem);
+}
+
+.periods ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.periods li {
+  list-style-type: none;
+  margin: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.periods li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.show-periods {
+  display: none;
+}
