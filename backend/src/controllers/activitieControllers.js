@@ -1,7 +1,7 @@
 const models = require("../models");
 
 const browse = (req, res) => {
-  models.activitie
+  models.activities
     .findAll()
     .then(([rows]) => {
       res.send(rows);
@@ -13,7 +13,7 @@ const browse = (req, res) => {
 };
 
 const read = (req, res) => {
-  models.activitie
+  models.activities
     .find(req.params.id)
     .then(([rows]) => {
       if (rows[0] == null) {
