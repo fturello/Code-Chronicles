@@ -1,4 +1,6 @@
+import Activities from "@components/Activities";
 import React from "react";
+import { Routes, Route } from 'react-router-dom';
 
 import Home from "./pages/Home";
 
@@ -7,8 +9,10 @@ import "./styles/App.css";
 function App() {
   return (
     <div className="App">
-      <Home />
-      <p>coucou la team</p>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/activities" element={<Activities />} />
+      </Routes>
     </div>
   );
 }

@@ -10,6 +10,25 @@ html,
   display: flex;
   flex-direction: column;
   height: 100%;
+  cursor: url('../assets/sword_32x32.png'), default;
+
+  --light: #fffef7;
+  --dark: #2a2929;
+  --shadow: #8d8b86;
+  --light-shadow: rgba(255, 255, 255, 0.3);
+
+  --dark-brown: #a76854;
+  --light-brown: #ecb494;
+  --light-grey: #acb4bc;
+  --sand: #ec9d6a;
+  --dark-grey:#6c645c;
+
+  --text-font: "Karla", sans-serif;
+  --title-font: "Montserrat", sans-serif;
+
+  --spacing: 8px;
+  --spacing-lg: calc(var(--spacing) * 2);
+  --spacing-xl: calc(var(--spacing) * 4);
 }
 
 body {
