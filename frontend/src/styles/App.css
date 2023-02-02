@@ -10,6 +10,7 @@ html,
   display: flex;
   flex-direction: column;
   height: 100%;
+  cursor: url('../assets/sword_32x32.png'), default;
 }
 
 body {
