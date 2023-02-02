@@ -69,7 +69,7 @@ DROP TABLE IF EXISTS `populars`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `populars` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `picture` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
+  `picture` varchar(255),
   `name` varchar(255) NOT NULL,
   `description` text NOT NULL,
   PRIMARY KEY (`id`)
@@ -85,6 +85,20 @@ LOCK TABLES `populars` WRITE;
 INSERT INTO `populars` VALUES (1,NULL,'Le Roi Arthur','Roi de l\'île de Bretagne et des pays alliés car détenant Xcaliburn, il siège dans sa place forte de Camelot '),(2,NULL,'Charlemagne','Roi guerrier,  il agrandi son royaume par des campagnes militaires violentes à visée d\'unification religieuse et d\'amour de son prochain.'),(3,NULL,'Mahomet','Il est le Prophète. Si vous êtes en quête de spiitualité, c\'est l\'homme qu\'il vous faut.'),(4,NULL,'Clovis Ier','Clovis I, également connu sous le nom de \"l\'unificateur des Gaules\", était un bouffon notoire pendant son temps libre. Il était connu pour son esprit vif et ses farces hilarantes, laissant souvent sa cour en PLS. \"Il s\'agit de garder le sens de l\'humour, même lorsque vous brandissez une épée.\"'),(5,NULL,'Marco Polo','Sa plus grande découverte ? Comment préparer l\'assiette parfaite de spaghettis à la Polo.'),(6,NULL,'Léovigild','Il a prouvé que le rire est vraiment le meilleur remède et qu\'un peu d\'humour peut faire beaucoup, même quand on tue des gens.'),(7,NULL,'Christophe Colomb','Un chouette film avec Gérard Depardieu.'),(8,NULL,'Jeanne d\'Arc','Assister à son bûcher, “il parait qu’elle est folle mais on sait pas”'),(9,NULL,'Godefroy de Montmirail','Godefroy Amaury de Malefète, comte de Montmirail, d\'Apremont et de Papincourt, dit « le Hardi ». Célèbre pour sa devise \"Que trépasse si je fayblis\",'),(10,NULL,'Jacquouille la fripouille','Jacquouille, dit « la Fripouille », est l\'écuyer de Godefroy de Montmirail, né dans les douves du chateau. Célèbre pour sa dentition et son odeur corporelle,'),(11,NULL,'Shrek','Ogre vert taciturne qui vit seul dans son marais. A vos risques et périls.'),(12,NULL,'Merlin l\'enchanteur','Merlin, Enchanteur de Bretagne, Grand vainqueur de la belette de Winchester, Concepteur de la potion de guérison des ongles incarnés, Auteur du parchemin \"Le Druidisme expliqué aux personnes âgées\"...'),(13,NULL,'Karadoc','Karadoc est un passionné de nourriture, qu\'il considère sacrée, dû à son passé houleux où il fut enfermé sans manger pendant une semaine par des romains. Sa devise : \"Le gras, c\'est la vie\",');
 /*!40000 ALTER TABLE `populars` ENABLE KEYS */;
 UNLOCK TABLES;
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `users` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `picture` varchar(255),
+  `firstname` varchar(255) NOT NULL,
+  `lasttname` varchar(255) NOT NULL,
+  `email`varchar(800) NOT NULL,
+  `password`varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping routines for database 'hackathon'
