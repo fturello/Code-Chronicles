@@ -42,7 +42,7 @@
 .earth:after {
   filter: saturate(2.5);
   background: linear-gradient(rgba(0, 0, 0, 1), transparent),
-    url("../assets/earth0.png");
+    url("../assets/earth.png");
   box-shadow: inset -20px -20px 14px 2px rgba(0, 0, 0, 0.2);
   animation-name: myopacity;
   animation-duration: 5295824s;
