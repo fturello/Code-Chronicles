@@ -21,17 +21,35 @@
     padding: var(--spacing-xl);
     background-image: linear-gradient(to bottom, #fad7c1, var(--light-brown));
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    animation-duration: 1s;
-    animation-name: Slide;
 }
 
-@keyframes Slide {
+.animate-in {
+    animation-name: animate-in;
+    animation-duration: 1s;
+}
+
+@keyframes animate-in {
     from {
         transform: scale(0);
     }
 
     to {
         transform: scale(1);
+    }
+}
+
+.animate-out {
+    animation-name: animate-out;
+    animation-duration: 0.5s;
+}
+
+@keyframes animate-out {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
     }
 }
 
