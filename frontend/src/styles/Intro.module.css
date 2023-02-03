@@ -1,29 +1,29 @@
 .stargate {
-    background: #111 url('https://res.cloudinary.com/shanomurphy/image/upload/v1520182770/stargate_tztoon.jpg') no-repeat center;
-    background-size: cover;
-    width: 177vh;
-    height: 100vh;
-    margin: 0 auto;
-    position: relative;
-  }
-  
-  .stargate__portal {
-    
-    width: 77vh;
-    height: 73vh;
-    position: absolute;
-    top: 18vh;
-    left: 50vh;
-    overflow: hidden; 
-    
+  background: #111
+    url("https://res.cloudinary.com/shanomurphy/image/upload/v1520182770/stargate_tztoon.jpg")
+    no-repeat center;
+  background-size: cover;
+  width: 177vh;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.stargate__portal {
+  width: 77vh;
+  height: 73vh;
+  position: absolute;
+  top: 18vh;
+  left: 50vh;
+  overflow: hidden;
 }
 
 video {
-    width: 100%;
-    border-radius: 50%;
-    width: 77vh;
-    height: 77vh;
-    animation: portal-animation 15s infinite;
+  width: 100%;
+  border-radius: 50%;
+  width: 77vh;
+  height: 77vh;
+  animation: portal-animation 15s infinite;
 }
   
   @keyframes portal-animation {

@@ -1,10 +1,10 @@
-import React from 'react';
-import styles from '../styles/PopUp.module.css';
+import React from "react";
+import styles from "../styles/PopUp.module.css";
 
 function PopUp({ setActivePopUp }) {
-    const handlePopUp = () => {
-        setActivePopUp(false);
-    };
+  const handlePopUp = () => {
+    setActivePopUp(false);
+  };
 
     return (
         <div className={styles["welcome-container"]}>
@@ -19,4 +19,4 @@ function PopUp({ setActivePopUp }) {
     )
 }
 
-export default PopUp
+export default PopUp;

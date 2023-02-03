@@ -1,5 +1,7 @@
 /*2*/
-*, *:before, *:after { 
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   cursor: url('../assets/sword_focus_32x32.png'), default;
 }
@@ -7,28 +9,28 @@
 .content {
   background: #eee;
   color: rgba(92, 47, 8, 0.815);
-  font-family: 'Lato', sans-serif;
-  
-  
+  font-family: "Lato", sans-serif;
 }
 
 title {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   margin-top: 0;
   text-transform: uppercase;
 }
+
 .h-2 {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   margin-top: 0;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
+
 figure {
   margin: 0;
 }
 
 .photos {
   height: auto;
-  width: 100%;  
+  width: 100%;
 }
 
 .wrapper {
@@ -41,7 +43,7 @@ figure {
   padding-left: 250px;
 }
 
-.wrapper > * {
+.wrapper>* {
   grid-column: 1 / span 2;
 }
 
@@ -71,35 +73,41 @@ figure {
   grid-row: 2 / 4;
 }
 
-.featured-image-2, .number-2 {
+.featured-image-2,
+.number-2 {
   grid-row: 4 / 5;
   margin: 0;
 }
 
-.number-1, .number-4 {
+.number-1,
+.number-4 {
   align-self: end;
   color: rgba(202, 152, 90, 0.5);
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-size: 480px;
   line-height: 480px;
   grid-column: 1 / 2;
 }
 
-.article-article-1, .article-article-4 {
+.article-article-1,
+.article-article-4 {
   grid-column: 2 / 3;
 }
+
 .article-article-2 {
   grid-column: 3 / 3;
   text-align: right;
 }
+
 .article-article-3 {
   grid-column: 3 / 1;
-  
 }
+
 .article-article-4 {
   grid-column: 4/4;
 }
-.featured-image-2, .number-2 {
+.featured-image-2,
+.number-2 {
   align-self: end;
   margin: 0;
 }
@@ -115,7 +123,7 @@ figure {
   background: black;
   border-radius: 130px;
   color: white;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-size: 100px;
   height: 130px;
   line-height: 130px;
@@ -140,55 +148,57 @@ figure {
 }
 
 @media (min-width: 600px) {
-  
   .wrapper {
     grid-template-columns: repeat(2, 1fr 2fr);
     margin: 24px auto;
   }
-  
+
   .header {
     grid-column: 3 / 5;
     width: 70%;
   }
-  
+
   .featured-image-1 {
     grid-row: 1 / 3;
   }
-  
+
   .article-1 {
     grid-row: 3 / 4;
   }
-  
+
   .article-2 {
     grid-column: 4 / 5;
     grid-row: 4 / 5;
   }
-  
-  .featured-image-2, .number-2 {
+
+  .featured-image-2,
+  .number-2 {
     grid-column: 3 / 5;
     grid-row: 2 / 4;
   }
 
-  .featured-image-3, .number-3 {
+  .featured-image-3,
+  .number-3 {
     grid-row: 4 / 6;
   }
-  
-  .featured-image-4, .number-4 {
+
+  .featured-image-4,
+  .number-4 {
     grid-column: 3 / 5;
     grid-row: 5 / 6;
   }
-  
+
   .number-4 {
     font-size: 320px;
     grid-row: 5 / 7;
   }
-  
-  .article-3, .article-4 {
+
+  .article-3,
+  .article-4 {
     grid-row: 6 / 7;
   }
-  
+
   .article-4 {
     grid-column: 4 / 5;
   }
-  
 }
