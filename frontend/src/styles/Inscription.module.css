@@ -123,7 +123,7 @@ input:focus {
     place-content: "Enter your message!";
 }
 
-.btn-travel {
+.btn-inscription {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0);
@@ -142,17 +142,17 @@ input:focus {
   padding-inline: 1.5rem;
 }
 
-.btn-travel:focus {
+.btn-inscription:focus {
   color: var(--light);
 }
 
-.btn-travel:hover {
+.btn-inscription:hover {
   border-color: var(--light);
   color: var(--light);
   fill: var(--light);
 }
 
-.btn-travel:active {
+.btn-inscription:active {
   border-color: #06f;
   color: #06f;
   fill: #06f;

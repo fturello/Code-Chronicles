@@ -10,6 +10,9 @@ function Welcome() {
       .get("http://localhost:5000/users")
       .then((res) => setUsers(res.data))
       .catch((err) => console.error(err));
+    setTimeout(() => {
+      window.location.assign("http://localhost:3000/");
+    }, 3000);
   }, []);
 
   return (
@@ -19,8 +22,9 @@ function Welcome() {
         {users.slice(-1).map((user) => (
           <>
             <p className={styles.welcomep}>
-              <strong>{user.firstname}</strong> votre inscription a réussi! Vous recevrez un mail
-              d'ici peu à cette adresse <strong>{user.mail}</strong> enjoy!
+              <strong>{user.firstname}</strong> votre inscription a réussi! Vous
+              recevrez un mail d'ici peu à cette adresse{" "}
+              <strong>{user.mail}</strong> enjoy!
             </p>
           </>
         ))}
