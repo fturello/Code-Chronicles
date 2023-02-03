@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Earth from "../components/Earth";
+import Timer from "../components/Timer";
 
 import styles from "../styles/Home.module.css";
 
 function Home() {
   const [period, setPeriod] = useState("");
   const [duration, setDuration] = useState(22921);
+  const [start, setStart] = useState(false);
   const navigate = useNavigate();
 
   const onPressTravel = () => {
@@ -15,22 +17,11 @@ function Home() {
       "--animation-duration",
       `${duration}s`
     );
+    setStart(true);
     setTimeout(() => {
       navigate("/activities");
-    }, 1000);
+    }, 3000);
   };
-
-  const [dateRet, setDateRet] = useState(2023);
-
-  useEffect(() => {
-    const date = setInterval(() => {
-      setDateRet(dateRet - 1);
-    }, 700);
-
-    return () => {
-      clearInterval(date);
-    };
-  }, [dateRet]);
 
   return (
     <div className={styles.container}>
@@ -42,7 +33,7 @@ function Home() {
           ? "Cliquez sur la planete pour choisir une période"
           : `Periode choisie : ${period}`}
       </div>
-      <p>{dateRet}</p>
+      {start ? <Timer /> : "2023"}
       <Earth setPeriod={setPeriod} />
       {period !== "" && (
         <button
