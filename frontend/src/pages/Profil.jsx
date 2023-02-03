@@ -8,7 +8,9 @@ function About() {
   return (
     <div>
       <Searching />
+      <br></br>
       <SideBar />
+      <br></br>
       <Activity />
       <FriendsCompo />
     </div>
