@@ -35,14 +35,14 @@
     }
 }
 
-.welcome>h1 {
+.welcome>.welcome-h1 {
     text-align: center;
     margin-bottom: var(--spacing-xl);
     font-family: var(--title-font);
     color: #3b3732;
 }
 
-.welcome>p {
+.welcome>.welcome-p {
     text-justify: auto;
     text-align: justify;
     margin-bottom: var(--spacing-xl);
