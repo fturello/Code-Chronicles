@@ -15,7 +15,12 @@ body {
 
 .period-choosed {
   font-size: 36px;
+  margin-top: 16vh;
   margin-bottom: 4rem;
+}
+
+.timer {
+  margin-bottom: 2rem;
 }
 
 .btn-travel {

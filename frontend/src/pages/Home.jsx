@@ -33,7 +33,9 @@ function Home() {
           ? "Cliquez sur la planete pour choisir une période"
           : `Periode choisie : ${period}`}
       </div>
-      {start ? <Timer /> : "2023"}
+      <div className={styles.timer}>
+        {start ? <Timer /> : "2023"}
+      </div>
       <Earth setPeriod={setPeriod} />
       {period !== "" && (
         <button
