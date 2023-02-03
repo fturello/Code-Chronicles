@@ -12,7 +12,9 @@ function Navbar() {
         <Link to="/" className={styles["navbar-brand"]}>
           <img src={logo} alt="logo" className={styles.logo} />
         </Link>
-        <Link to="/Connexion" className={styles.btnLog}></Link>
+        <div className={styles.connect}>
+          <Link to="/Connexion" className={styles.btnLog}></Link>
+        </div>
       </nav>
     </header>
   );

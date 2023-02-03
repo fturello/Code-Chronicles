@@ -111,7 +111,7 @@
 /* BOUTON BATMAN */
 
 .register-button {
-    cursor: url("../assets/sword_crossing_32x32.png"), default;
+  cursor: url("../assets/sword_crossing_32x32.png"), default;
   border: none;
   position: relative;
   width: 200px;
@@ -128,7 +128,7 @@
 }
 
 .register-button:after {
-    cursor: url("../assets/sword_crossing_32x32.png"), default;
+  cursor: url("../assets/sword_crossing_32x32.png"), default;
   content: '';
   position: absolute;
   left: 0;
@@ -139,12 +139,12 @@
 }
 
 .register-button:hover:after {
-    cursor: url("../assets/sword_crossing_32x32.png"), default;
+  cursor: url("../assets/sword_crossing_32x32.png"), default;
   box-shadow: 0px -13px 56px 12px rgb(239, 205, 186, 1);
 }
 
 .register-button .register-span {
-    cursor: url("../assets/sword_crossing_32x32.png"), default;
+  cursor: url("../assets/sword_crossing_32x32.png"), default;
   position: absolute;
   width: 80%;
   font-weight: 400;
@@ -158,12 +158,12 @@
 }
 
 .register-button:hover .register-span {
-    cursor: url("../assets/sword_crossing_32x32.png"), default;
+  cursor: url("../assets/sword_crossing_32x32.png"), default;
   color: var(--light-brown);
 }
 
 .register-button:before {
-    cursor: url("../assets/sword_crossing_32x32.png"), default;
+  cursor: url("../assets/sword_crossing_32x32.png"), default;
   content: "";
   position: absolute;
   width: 0;
@@ -176,7 +176,7 @@
 }
 
 .register-button:hover:before {
-    cursor: url("../assets/sword_crossing_32x32.png"), default;
+  cursor: url("../assets/sword_crossing_32x32.png"), default;
   width: 100%;
 }
 

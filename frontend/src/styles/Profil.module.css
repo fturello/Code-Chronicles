@@ -16,11 +16,13 @@ title {
   margin-top: 0;
   text-transform: uppercase;
 }
+
 .two {
   font-family: "Fjalla One", sans-serif;
   margin-top: 0;
   text-transform: uppercase;
 }
+
 figure {
   margin: 0;
 }
@@ -41,7 +43,7 @@ img {
   padding-top: 250px;
 }
 
-.wrapper > * {
+.wrapper>* {
   grid-column: 1 / span 2;
 }
 

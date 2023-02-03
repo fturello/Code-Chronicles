@@ -4,7 +4,7 @@ import Searching from "../components/Searching";
 import Activity from "../components/Activity";
 import FriendsCompo from "../components/FriendsCompo";
 
-function About() {
+function Profil() {
   return (
     <div>
       <Searching />
@@ -17,4 +17,4 @@ function About() {
   );
 }
 
-export default About;
+export default Profil;

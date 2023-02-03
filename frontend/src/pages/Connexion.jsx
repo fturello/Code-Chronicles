@@ -39,7 +39,7 @@ function Connexion() {
   };
   const handleCo = (e) => {
     e.preventDefault();
-    navigate("/");
+    navigate("/profil");
   };
 
   return (
