@@ -1,6 +1,7 @@
-body {
-  background-color: #c6c7cf;
-}
+/* body {
+  background: rgb(152, 152, 152);
+  background: radial-gradient(circle, rgba(152, 152, 152, 1) 0%, rgba(0, 16, 61, 1) 100%);
+} */
 
 .container {
   display: flex;
@@ -8,6 +9,10 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  height: 100%;
+  background: rgb(152, 152, 152);
+  background: radial-gradient(circle, rgba(152, 152, 152, 1) 0%, rgba(0, 16, 61, 1) 100%);
+  background-size: cover;
 }
 
 .nav {

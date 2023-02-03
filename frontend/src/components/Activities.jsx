@@ -36,11 +36,15 @@ function Activities() {
               <div className={styles.card}>
                 <div className={styles.presentation}>
                   <h1 className={styles["activity-h1"]}>
-                    <span className={styles.span}>{activity.title}
-                    </span>
+                    <span className={styles.span}>{activity.title}</span>
                   </h1>
                   <p className={styles["activity-p"]}>{activity.description}</p>
-                  <button onClick={handleRegistration} className={styles["activity-button"]}>Ça m'intéresse !</button>
+                  <button
+                    onClick={handleRegistration}
+                    className={styles["activity-button"]}
+                  >
+                    Ça m'intéresse !
+                  </button>
                 </div>
                 <img
                   className={styles["activity-image"]}
@@ -57,11 +61,15 @@ function Activities() {
               <div className={styles.card}>
                 <div className={styles.presentation}>
                   <h1 className={styles["activity-h1"]}>
-                    <span className={styles.span}>{activity.title}
-                    </span>
+                    <span className={styles.span}>{activity.title}</span>
                   </h1>
                   <p className={styles["activity-p"]}>{activity.description}</p>
-                  <button onClick={handleRegistration} className={styles["activity-button"]}>Ça m'intéresse !</button>
+                  <button
+                    onClick={handleRegistration}
+                    className={styles["activity-button"]}
+                  >
+                    Ça m'intéresse !
+                  </button>
                 </div>
                 <img
                   className={styles["activity-image"]}
