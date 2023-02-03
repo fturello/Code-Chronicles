@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import styles from "../styles/Inscription.module.css";
 
+const backEndURL = import.meta.env.VITE_BACKEND_URL;
+
 function Inscription() {
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
@@ -26,7 +28,7 @@ function Inscription() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/users", {
+      .post(`${backEndURL}/users`, {
         firstname,
         lastname,
         mail,

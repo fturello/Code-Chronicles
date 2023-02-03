@@ -15,8 +15,7 @@ function Activities() {
   const [registration, setRegistration] = useState(false);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5000/activities")
+    axios.get(`${backEndURL}/activities`)
       .then((res) => setActivities(res.data))
   }, []);
 
@@ -27,7 +26,7 @@ function Activities() {
   return (
     <div className={styles.general}>
       {activePopUp && <PopUp setActivePopUp={setActivePopUp} />}
-      {registration && <Registration />}
+      {registration && <Registration setRegistration={setRegistration} />}
       <div className={styles["cards-container"]}>
         <div className={styles.cards}>
           {activities
