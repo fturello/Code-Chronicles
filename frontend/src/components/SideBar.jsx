@@ -11,6 +11,9 @@ function About() {
       <h1 className={styles.utilisateur}>Jeanne d'Arc</h1>
       <h1 className={styles.description}>28 ans, Single</h1>
       <br />
+      <a href="/profil" className={styles.links}>
+        Mon Profil
+      </a>
       <a href="/" className={styles.links}>
         Home
       </a>
