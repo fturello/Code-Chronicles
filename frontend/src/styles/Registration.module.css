@@ -53,7 +53,7 @@
     }
 }
 
-.welcome>h1 {
+.welcome>.welcome-h1 {
     text-align: center;
     margin-bottom: var(--spacing-xl);
     font-family: var(--title-font);
