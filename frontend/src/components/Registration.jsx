@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/Registration.module.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 
 function Registration({ setRegistration }) {
   const [welcomeStyles, setWelcomeStyles] = useState(
@@ -49,5 +50,9 @@ function Registration({ setRegistration }) {
     </div>
   );
 }
+
+Registration.propTypes = {
+  setRegistration: PropTypes.func.isRequired,
+};
 
 export default Registration;
