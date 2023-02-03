@@ -28,8 +28,8 @@ function Registration({ setRegistration }) {
                     </button>
                 </div>
                 <h1>Super !</h1>
-                <p>Nous sommes pressé.e.s de vous voir participer à cette aventure !</p>
-                <p>Cependant nous avons remarqué que vous n'étiez pas encore inscrit.e ...</p>
+                <p className={styles["register-p1"]}>Nous sommes pressé.e.s de vous voir participer à cette aventure !</p>
+                <p className={styles["register-p2"]}>Cependant nous avons remarqué que vous n'étiez pas encore inscrit.e ...</p>
                 <button onClick={handleInscription} className={styles["register-button"]}>
                     <span className={styles["register-span"]}>Je souhaite m'inscrire 📝</span>
                 </button>
