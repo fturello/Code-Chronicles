@@ -15,7 +15,7 @@ function Activities() {
   const [registration, setRegistration] = useState(false);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/activities')
+    axios.get(`${backEndURL}/activities`)
       .then((res) => setActivities(res.data))
   }, []);
 
