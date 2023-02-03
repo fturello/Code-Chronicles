@@ -16,7 +16,7 @@ body {
 
 .period-choosed {
   font-size: 36px;
-  margin-top: 3rem;
+  margin-top: 16vh;
   margin-bottom: 4rem;
   color: var(--light);
   font-weight: 600;
@@ -25,6 +25,10 @@ body {
 .datep {
   color: var(--light);
   font-weight: 600;
+}
+
+.timer {
+  margin-bottom: 2rem;
 }
 
 .btn-travel {

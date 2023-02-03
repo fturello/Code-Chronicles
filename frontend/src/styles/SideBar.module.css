@@ -1,0 +1,82 @@
+body{
+	margin: 0;
+ }
+
+
+ .sidebar{
+	position: fixed;
+	width: 200px;
+	height: 100vh;
+	top:0;
+	left: 0;
+	bottom: 0;
+	background: #a76854;
+	padding-top: 50px;
+	outline: none;
+	z-index: 5;
+ }
+.avatar{
+	text-align:center;
+	
+}	
+.image {
+	width: 160px;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 0 0 4px rgba(246, 241, 241, 0.822);
+	
+}
+.utilisateur {
+	text-align: center;
+}
+ .sidebar .utilisateur {
+	display: block;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	font-family: "Rubik";
+	letter-spacing: 2px;
+	font-weight: 400;
+	margin: 0;
+	font-size: 25px;
+	text-transform: uppercase;
+	
+ }
+ .utilisateur {
+	text-align: center;
+ }
+ 
+ .sidebar .links {
+	display: block;
+	padding: 10px 20px;
+	color: #bbb;
+	text-decoration: none;
+	font-family: "Rubik";
+	letter-spacing: 2px;
+	
+ }
+ .sidebar{
+	height: 150%;
+	box-shadow: rgba(246, 241, 241, 0.822);
+	opacity: 0.9;
+ }
+ .links {
+	font-size: 20px;
+	display: flex;
+	text-align: center;
+ }
+ .description {
+	text-align: center;
+	color:rgb(221, 215, 215);
+	font-size: 15px;
+	font-family: "Rubik";
+ }
+ .links:hover{
+	color: #fff;
+	margin-left: 20px;
+	transition: 0.4s;
+ }
+ .header-icon {
+	margin-right: 10px;
+	width: 1.5rem;
+ }

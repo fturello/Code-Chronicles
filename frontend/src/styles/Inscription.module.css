@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    background-image: url('../assets/background-activities.png');
+    background-size: cover;
 }
 
 .card {
