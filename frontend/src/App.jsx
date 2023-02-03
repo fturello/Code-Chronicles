@@ -19,7 +19,6 @@ function App() {
         <Route path="/connexion" element={<Connexion />} />
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/friends" element={<Friends />} />
-        <Route path="/inscription" element={<Inscription />} />
       </Routes>
     </>
   );

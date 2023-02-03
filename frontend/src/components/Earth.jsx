@@ -74,7 +74,7 @@ function Earth({ setPeriod }) {
 }
 
 Earth.propTypes = {
-  setPeriod: PropTypes.bool,
+  setPeriod: PropTypes.func.isRequired,
 };
 
 Earth.defaultProps = {
