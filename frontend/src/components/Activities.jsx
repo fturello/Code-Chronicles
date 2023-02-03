@@ -1,11 +1,11 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-import PopUp from './PopUp';
-import Registration from './Registration';
+import PopUp from "./PopUp";
+import Registration from "./Registration";
 
-import styles from '../styles/Activities.module.css';
+import styles from "../styles/Activities.module.css";
 
 const backEndURL = import.meta.env.VITE_BACKEND_URL;
 
@@ -15,8 +15,9 @@ function Activities() {
   const [registration, setRegistration] = useState(false);
 
   useEffect(() => {
-    axios.get(`${backEndURL}/activities`)
-      .then((res) => setActivities(res.data))
+    axios
+      .get(`${backEndURL}/activities`)
+      .then((res) => setActivities(res.data));
   }, []);
 
   const handleRegistration = () => {
@@ -35,15 +36,18 @@ function Activities() {
               <div className={styles.card}>
                 <div className={styles.presentation}>
                   <h1>
-                    <span className={styles.span}>{activity.title}
-                    </span>
+                    <span className={styles.span}>{activity.title}</span>
                   </h1>
                   <p>{activity.description}</p>
                   <button onClick={handleRegistration}>Ça m'intéresse !</button>
                 </div>
-                <img className={styles["activity-image"]} src={`${backEndURL}/assets/images/${activity.image}`} alt='' />
-              </div>)
-            )}
+                <img
+                  className={styles["activity-image"]}
+                  src={`${backEndURL}/assets/images/${activity.image}`}
+                  alt=""
+                />
+              </div>
+            ))}
         </div>
         <div className={styles.cards}>
           {activities
@@ -52,19 +56,22 @@ function Activities() {
               <div className={styles.card}>
                 <div className={styles.presentation}>
                   <h1>
-                    <span className={styles.span}>{activity.title}
-                    </span>
+                    <span className={styles.span}>{activity.title}</span>
                   </h1>
                   <p>{activity.description}</p>
                   <button onClick={handleRegistration}>Ça m'intéresse !</button>
                 </div>
-                <img className={styles["activity-image"]} src={`${backEndURL}/assets/images/${activity.image}`} alt='' />
-              </div>)
-            )}
+                <img
+                  className={styles["activity-image"]}
+                  src={`${backEndURL}/assets/images/${activity.image}`}
+                  alt=""
+                />
+              </div>
+            ))}
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Activities;

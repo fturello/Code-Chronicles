@@ -50,7 +50,7 @@
 .picture {
   margin-top: 1rem;
   height: auto;
-  width: 35%
+  width: 35%;
 }
 
 .title {
@@ -70,9 +70,9 @@
 }
 
 .btn-unsubscribe {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 0;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-sizing: border-box;
   color: #111827;
   font-family: Karla, sans-serif;
