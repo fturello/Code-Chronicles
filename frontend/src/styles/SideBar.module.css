@@ -2,11 +2,7 @@ body{
 	margin: 0;
  }
 
-span {
-	color:rgba(0,0,0,0.2);
-	font-size:0.4em;
-	display:block;
-}
+
  .sidebar{
 	position: fixed;
 	width: 200px;
@@ -50,7 +46,7 @@ span {
 	text-align: center;
  }
  
- .sidebar a {
+ .sidebar .links {
 	display: block;
 	padding: 10px 20px;
 	color: #bbb;
@@ -64,7 +60,7 @@ span {
 	box-shadow: rgba(246, 241, 241, 0.822);
 	opacity: 0.9;
  }
- a {
+ .links {
 	font-size: 20px;
 	display: flex;
 	text-align: center;
@@ -75,7 +71,7 @@ span {
 	font-size: 15px;
 	font-family: "Rubik";
  }
- a:hover{
+ .links:hover{
 	color: #fff;
 	margin-left: 20px;
 	transition: 0.4s;
