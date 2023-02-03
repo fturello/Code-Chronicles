@@ -11,7 +11,7 @@ function Welcome() {
       .then((res) => setUsers(res.data))
       .catch((err) => console.error(err));
     setTimeout(() => {
-      window.location.assign("http://localhost:3000/");
+      window.location.assign("http://localhost:3000/activities");
     }, 3000);
   }, []);
 

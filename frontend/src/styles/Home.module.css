@@ -1,5 +1,4 @@
 body {
-  background-color: #aaabb8;
 }
 
 .container {
@@ -7,6 +6,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url('../assets/2wall.jpg');
+  background-size: cover;
 }
 
 .nav {
@@ -17,13 +18,21 @@ body {
   font-size: 36px;
   margin-top: 3rem;
   margin-bottom: 4rem;
+  color: var(--light);
+  font-weight: 600;
+}
+
+.datep {
+  color: var(--light);
+  font-weight: 600;
 }
 
 .btn-travel {
   justify-content: center;
+  color: var(--light);
   align-items: center;
   background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #000;
+  border: 2px solid var(--light);
   cursor: pointer;
   font-family: Karla, sans-serif;
   font-size: 25px;
@@ -38,19 +47,19 @@ body {
 }
 
 .btn-travel:focus {
-  color: #171e29;
+  color: var(--light);
 }
 
 .btn-travel:hover {
-  border-color: #06f;
-  color: #06f;
-  fill: #06f;
+  border-color: var(--light);
+  color: var(--light);
+  fill: var(--light);
 }
 
 .btn-travel:active {
-  border-color: #06f;
-  color: #06f;
-  fill: #06f;
+  border-color: var(--light);
+  color: var(--light);
+  fill: var(--light);
   transform: translateY(4px);
   transition: 100ms;
 }

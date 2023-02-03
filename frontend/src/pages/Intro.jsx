@@ -1,7 +1,16 @@
 import React from "react";
+import { useEffect, useRef } from "react";
 import styles from "../styles/Intro.module.css";
+import sound from "../assets/soundIntro.mp3";
 
 function Intro() {
+  const audioRef = useRef(null);
+  useEffect(() => {
+    audioRef.current.play();
+    setTimeout(() => {
+      window.location.assign("http://localhost:3000/activities");
+    }, 5000);
+  }, []);
   return (
     <div className={styles.stargate}>
       <div className={styles["stargate__portal"]}>
@@ -15,6 +24,9 @@ function Intro() {
             type="video/mp4"
           />
         </video>
+        <audio ref={audioRef} src={sound}>
+          <track kind="captions" />
+        </audio>
       </div>
     </div>
   );

@@ -42,7 +42,11 @@ video {
     
   }
   
-  /**
-   * Housekeeping
-   * ------------
-  */
+    .stargate__portal video {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    }
+    .stargate__portal:hover video {
+    -webkit-transform:scale(1.25); 
+    transform:scale(1.25);
+    }

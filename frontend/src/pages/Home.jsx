@@ -16,7 +16,7 @@ function Home() {
       `${duration}s`
     );
     setTimeout(() => {
-      navigate("/activities");
+      navigate("/intro");
     }, 1000);
   };
 
@@ -42,7 +42,7 @@ function Home() {
           ? "Cliquez sur la planete pour choisir une période"
           : `Periode choisie : ${period}`}
       </div>
-      <p>{dateRet}</p>
+      <p className={styles.datep}>{dateRet}</p>
       <Earth setPeriod={setPeriod} />
       {period !== "" && (
         <button
