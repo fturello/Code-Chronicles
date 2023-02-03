@@ -1,7 +1,7 @@
 const models = require("../models");
 
 const browse = (req, res) => {
-  models.user
+  models.users
     .findAll()
     .then(([rows]) => {
       res.send(rows);
@@ -28,25 +28,23 @@ const read = (req, res) => {
     });
 };
 
-const add = (req, res) => {
-    const user = req.body;
-  
-    // TODO validations (length, format...)
-  
-    models.user
-      .insert(user)
-      .then(([result]) => {
-        res.location(`/users/${result.insertId}`).sendStatus(201);
-      })
-      .catch((err) => {
-        console.error(err);
-        res.sendStatus(500);
-      });
-  };
+const create = (req, res) => {
+  const user = req.body;
+  // TODO validations (length, format...)
 
-  module.exports = {
-    browse,
-    read,
-    add   
-  };
-  
+  models.users
+    .insert(user)
+    .then(([result]) => {
+      res.status(201).json({ id: result.insertId, ...user });
+    })
+    .catch((err) => {
+      console.error(err);
+      res.sendStatus(500);
+    });
+};
+
+module.exports = {
+  browse,
+  read,
+  create,
+};

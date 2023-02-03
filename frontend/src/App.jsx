@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Inscription from "./pages/Inscription";
 import Friends from "./pages/Friends";
+import Intro from "./pages/Intro";
 
 import "./styles/App.css";
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/connexion" element={<Connexion />} />
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/friends" element={<Friends />} />
+        <Route path="/intro" element={<Intro />} />
       </Routes>
     </>
   );

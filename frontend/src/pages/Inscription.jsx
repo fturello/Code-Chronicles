@@ -60,7 +60,7 @@ function Inscription() {
               <input type="text" name="mail" id="mail" />
               <label htmlFor="password">Mot de passe</label>
               <input type="password" id="password" name="password" />
-              <button type="button" className={styles["btn-travel"]}>
+              <button type="button" className={styles["btn-inscription"]}>
                 Connexion
               </button>
             </form>
@@ -106,7 +106,7 @@ function Inscription() {
               <button
                 type="button"
                 onClick={handleSubmit}
-                className={styles["btn-travel"]}
+                className={styles["btn-inscription"]}
               >
                 Inscription
               </button>

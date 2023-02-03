@@ -1,11 +1,11 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-import PopUp from './PopUp';
-import Registration from './Registration';
+import PopUp from "./PopUp";
+import Registration from "./Registration";
 
-import styles from '../styles/Activities.module.css';
+import styles from "../styles/Activities.module.css";
 
 const backEndURL = import.meta.env.VITE_BACKEND_URL;
 
@@ -64,7 +64,7 @@ function Activities() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Activities;
