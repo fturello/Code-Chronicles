@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&family=Montserrat:wght@600;700&display=swap');
+
+:root {
+  --light: #fffef7;
+  --dark: #2a2929;
+  --shadow: #8d8b86;
+  --light-shadow: rgba(255, 255, 255, 0.3);
+
+  --dark-brown: #a76854;
+  --light-brown: #ecb494;
+  --light-grey: #acb4bc;
+  --sand: #ec9d6a;
+  --dark-grey: #6c645c;
+
+  --text-font: "Karla", sans-serif;
+  --title-font: "Montserrat", sans-serif;
+
+  --spacing: 8px;
+  --spacing-lg: calc(var(--spacing) * 2);
+  --spacing-xl: calc(var(--spacing) * 4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* cursor: url('../assets/sword_32x32.png'), default; */
+}
+
+body {
+  margin: 0;
+  font-family: "Karla", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  font-weight: 400;
+  height: 100%;
+}
+
+:root {
+  --light: #fffef7;
+  --dark: #2a2929;
+  --shadow: #8d8b86;
+  --light-shadow: rgba(255, 255, 255, 0.3);
+
+  --text-font: "Karla", sans-serif;
+  --title-font: "Montserrat", sans-serif;
+
+  --spacing: 8px;
+  --spacing-lg: calc(var(--spacing) * 2);
+  --spacing-xl: calc(var(--spacing) * 4);
+}

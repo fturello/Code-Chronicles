@@ -10,9 +10,9 @@ function About() {
 
       <h1 className={styles.utilisateur}>Jeanne d'Arc</h1>
       <h1 className={styles.description}>28 ans, Single</h1>
-      <a href="">Home</a>
-      <a href="">Activités</a>
-      <a href="">Communauté</a>
+      <a href="/">Home</a>
+      <a href="./Activities">Activités</a>
+      <a href="/friends">Communauté</a>
       <a href="">Galerie</a>
     </div>
   );

@@ -10,4 +10,20 @@ router.put("/items/:id", itemControllers.edit);
 router.post("/items", itemControllers.add);
 router.delete("/items/:id", itemControllers.destroy);
 
+const activitieControllers = require("./controllers/activitieControllers");
+
+router.get("/activities", activitieControllers.browse);
+router.get("/activities/:id", activitieControllers.read);
+
+const popularControllers = require("./controllers/popularControllers");
+
+router.get("/populars", popularControllers.browse);
+router.get("/populars/:id", popularControllers.read);
+
+const userControllers = require("./controllers/userControllers");
+
+router.get("/users", userControllers.browse);
+router.get("/users/:id", userControllers.read);
+router.post("/users", userControllers.create);
+
 module.exports = router;
