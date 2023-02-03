@@ -12,6 +12,7 @@ function Navbar() {
         <Link to="/" className={styles["navbar-brand"]}>
           <img src={logo} alt="logo" className={styles.logo} />
         </Link>
+        <Link to="/Connexion" className={styles.btnLog}></Link>
       </nav>
     </header>
   );
