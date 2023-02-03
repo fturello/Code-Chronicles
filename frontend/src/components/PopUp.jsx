@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/PopUp.module.css";
+import PropTypes from "prop-types";
 
 function PopUp({ setActivePopUp }) {
   const handlePopUp = () => {
@@ -18,5 +19,9 @@ function PopUp({ setActivePopUp }) {
         </div>
     )
 }
+
+PopUp.propTypes = {
+  setActivePopUp: PropTypes.func.isRequired,
+};
 
 export default PopUp;
