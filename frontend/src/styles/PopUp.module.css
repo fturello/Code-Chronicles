@@ -23,7 +23,7 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.welcome>h1 {
+.welcome>.popup-h1 {
     text-align: center;
     margin-bottom: var(--spacing-lg);
     font-family: var(--title-font);
@@ -31,14 +31,14 @@
     font-size:2rem;
 }
 
-.welcome>p {
+.welcome>.popup-p {
     text-justify: auto;
     text-align: justify;
     margin-bottom: var(--spacing-lg);
     font-size:1.3rem;
 }
 
-.welcome>button {
+.welcome>.popup-button {
     background-color: transparent;
     background-image: linear-gradient(to bottom, #fff, #f8eedb);
     border: 0 solid #e5e7eb;
@@ -64,13 +64,13 @@
     box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
 }
 
-.welcome>button:active {
+.welcome>.popup-button:active {
     background-color: #f3f4f6;
     box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15), 0px 1px 1px rgba(81, 41, 10, 0.15);
     transform: translateY(0.125rem);
 }
 
-.welcome>button:focus {
+.welcome>.popup-button:focus {
     box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
 }
 
