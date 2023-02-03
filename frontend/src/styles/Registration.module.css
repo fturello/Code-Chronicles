@@ -21,11 +21,14 @@
   padding: var(--spacing-xl);
   background-image: linear-gradient(to bottom, #fad7c1, var(--light-brown));
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  animation-duration: 1s;
-  animation-name: Slide;
 }
 
-@keyframes Slide {
+.animate-in {
+  animation-name: animate-in;
+  animation-duration: 1s;
+}
+
+@keyframes animate-in {
   from {
     transform: scale(0);
   }
@@ -35,28 +38,48 @@
   }
 }
 
-.welcome > h1 {
+.animate-out {
+  animation-name: animate-out;
+  animation-duration: 0.5s;
+}
+
+@keyframes animate-out {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}
+
+.welcome>.welcome-h1 {
   text-align: center;
   margin-bottom: var(--spacing-xl);
   font-family: var(--title-font);
   color: #3b3732;
 }
 
-.welcome > p {
+.register-p1 {
   text-justify: auto;
   text-align: justify;
   margin-bottom: var(--spacing-xl);
 }
 
-.welcome > button {
+.register-p2 {
+  text-justify: auto;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+.welcome>button {
   background-color: transparent;
-  background-image: linear-gradient(to bottom, #fff, #f8eedb);
   border: 0 solid #e5e7eb;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   box-sizing: border-box;
   color: var(--dark-brown);
   column-gap: 1rem;
-  cursor: url("../assets/sword_crossing_32x32.png"), default;
+  cursor: url('../assets/sword_crossing_32x32.png'), default;
   display: flex;
   font-family: var(--text-font);
   font-size: 100%;
@@ -67,22 +90,21 @@
   padding: 1rem 1.5rem;
   text-align: center;
   text-transform: none;
-  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1),
-    0px 2px 2px rgba(81, 41, 10, 0.2);
+  box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
 }
 
-.welcome > button:active {
+.welcome>button:active {
   background-color: #f3f4f6;
   box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15),
     0px 1px 1px rgba(81, 41, 10, 0.15);
   transform: translateY(0.125rem);
 }
 
-.welcome > button:focus {
+.welcome>button:focus {
   box-shadow: rgba(72, 35, 7, 0.46) 0 0 0 4px,
     -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
 }
@@ -104,17 +126,17 @@
 }
 
 .register-button:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  box-shadow: 0px 0 0 0 white;
-  transition: all 2s ease;
+  box-shadow: 0px 0 0 0 rgb(239, 205, 186, 0);
+  transition: all 1s ease-in;
 }
 
 .register-button:hover:after {
-  box-shadow: 0px -13px 56px 12px #ffffffa6;
+  box-shadow: 0px -13px 56px 12px rgb(239, 205, 186, 1);
 }
 
 .register-button .register-span {
@@ -127,6 +149,7 @@
   transform: translate(-50%, -50%);
   color: var(--dark-brown);
   font-family: var(--text-font);
+  transition: all 1s ease;
 }
 
 .register-button:hover .register-span {
@@ -171,7 +194,7 @@
   color: var(--dark-brown);
 }
 
-.quit:hover > svg {
+.quit:hover>svg {
   font-size: 1.2em;
   transform: translateX(-5px);
 }
