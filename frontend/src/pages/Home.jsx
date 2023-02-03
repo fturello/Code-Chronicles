@@ -28,7 +28,7 @@ function Home() {
       <div className={styles["period-choosed"]}>
         {period === ""
           ? "Cliquez sur la planete pour choisir une période"
-          : `Periode choisie : ${period}`}
+          : `Periode choisie : ${period}`}{" "}
       </div>
       <Earth setPeriod={setPeriod} />
       {period !== "" && (
