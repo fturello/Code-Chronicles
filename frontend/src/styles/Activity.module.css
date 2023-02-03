@@ -1,12 +1,15 @@
 /*2*/
 *, *:before, *:after { 
   box-sizing: border-box;
+  cursor: url('../assets/sword_focus_32x32.png'), default;
 }
 
 .content {
   background: #eee;
   color: rgba(92, 47, 8, 0.815);
   font-family: 'Lato', sans-serif;
+  
+  
 }
 
 title {
