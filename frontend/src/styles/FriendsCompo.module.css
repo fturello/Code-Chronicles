@@ -5,14 +5,17 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f7f7f7;
+    
   }
-  
+  .team {
+    padding-left: 170px;
+    padding-bottom: 30%;
+  }
   .section-heading {
-    font-family: "Dancing Script", cursive;
     text-align: center;
-    font-size: 64px;
-    color: #10996d;
-    margin: 0 0 70px;
+    font-size: 30px;
+    color: #ca994b;
+  
   }
   
   .container {
@@ -21,20 +24,24 @@ body {
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
+    
   }
-  
+  .photo {
+    height: 80%;
+  }
   .profile {
     position: relative;
     transition: all 0.3s;
+    
   }
   
   .profile:hover {
     transform: translateY(25px);
   }
   
-  .profile img {
+  .profile .photo {
     max-width: 100%;
-    border-radius: 50%;
+    border-radius: 20%;
     border: 5px solid #f7f7f7;
     filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
     cursor: pointer;
@@ -46,9 +53,8 @@ body {
   
   .profile .nme {
     position: absolute;
-    background-color: #10996d;
+    background-color: #575858;
     color: #fff;
-    font-family: "Bebas Neue", cursive;
     padding: 15px 30px;
     border-radius: 100px;
     bottom: -80px; left: 50%;
@@ -64,12 +70,12 @@ body {
     content: "";
     position: absolute;
     width: 15px; height: 15px;
-    background-color: #10996d;
+    background-color: #383938;
     top: 0; left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
   }
   
-  .profile img:hover + .nme {
+  .profile .photo:hover + .nme {
     opacity: 1;
     transform: translateX(-50%);
     box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
