@@ -3,6 +3,7 @@
 *:before,
 *:after {
   box-sizing: border-box;
+  cursor: url('../assets/sword_focus_32x32.png'), default;
 }
 
 .content {
@@ -16,16 +17,18 @@ title {
   margin-top: 0;
   text-transform: uppercase;
 }
+
 .h-2 {
   font-family: "Fjalla One", sans-serif;
   margin-top: 0;
   text-transform: uppercase;
 }
+
 figure {
   margin: 0;
 }
 
-img {
+.photos {
   height: auto;
   width: 100%;
 }
@@ -40,7 +43,7 @@ img {
   padding-left: 250px;
 }
 
-.wrapper > * {
+.wrapper>* {
   grid-column: 1 / span 2;
 }
 
@@ -90,13 +93,16 @@ img {
 .article-article-4 {
   grid-column: 2 / 3;
 }
+
 .article-article-2 {
   grid-column: 3 / 3;
   text-align: right;
 }
+
 .article-article-3 {
   grid-column: 3 / 1;
 }
+
 .article-article-4 {
   grid-column: 4/4;
 }

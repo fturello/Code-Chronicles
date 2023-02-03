@@ -6,9 +6,11 @@
 }
 
 .logo {
-  width: 17rem;
-  filter: drop-shadow(0px 0px 20px rgba(100, 25, 220, 0.3));
+  width: 10rem;
+  margin: 2rem;
+  filter: drop-shadow(0px 0px 20px rgba(25, 41, 220, 0.3));
 }
+
 .btnLog {
   background: var(--secondary-color);
   padding: 30px;

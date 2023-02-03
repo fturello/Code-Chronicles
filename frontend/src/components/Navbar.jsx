@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import styles from "../styles/Navbar.module.css";
 
-import logo from "../assets/logo0.png";
+import logo from "../assets/logo.png";
 
 function Navbar() {
   return (
