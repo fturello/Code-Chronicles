@@ -5,6 +5,7 @@ function FriendsCompo() {
   return (
     <section className={styles.team}>
       <h2 className={styles["section-heading"]}>Amis plus proches </h2>
+      <br />
       <div className={styles.container}>
         <div className={styles.profile}>
           <img
