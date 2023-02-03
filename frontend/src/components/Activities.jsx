@@ -33,7 +33,7 @@ function Activities() {
           {activities
             .filter((activity) => activity.id < 6)
             .map((activity) => (
-              <div className={styles.card}>
+              <div key={activity.id} className={styles.card}>
                 <div className={styles.presentation}>
                   <h1 className={styles["activity-h1"]}>
                     <span className={styles.span}>{activity.title}</span>
@@ -58,7 +58,7 @@ function Activities() {
           {activities
             .filter((activity) => activity.id > 5)
             .map((activity) => (
-              <div className={styles.card}>
+              <div key={activity.id} className={styles.card}>
                 <div className={styles.presentation}>
                   <h1 className={styles["activity-h1"]}>
                     <span className={styles.span}>{activity.title}</span>

@@ -33,13 +33,13 @@ function Connexion() {
         password,
       })
       .then(() => {
-        navigate("/welcome");
+        navigate("/profils");
       })
       .catch((err) => console.error(err));
   };
   const handleCo = (e) => {
     e.preventDefault();
-    navigate("/");
+    navigate("/profil");
   };
 
   return (
