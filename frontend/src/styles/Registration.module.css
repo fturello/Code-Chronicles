@@ -1,179 +1,205 @@
 .welcome-container {
-    position: fixed;
-    z-index: 20;
-    backdrop-filter: blur(0.8rem);
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  z-index: 20;
+  backdrop-filter: blur(0.8rem);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .welcome {
-    position: relative;
-    border-radius: 20px;
-    width: 25vw;
-    font-family: var(--text-font);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: var(--spacing-xl);
-    background-image: linear-gradient(to bottom, #fad7c1, var(--light-brown));
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    animation-duration: 1s;
-    animation-name: Slide;
+  position: relative;
+  border-radius: 20px;
+  width: 25vw;
+  font-family: var(--text-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: var(--spacing-xl);
+  background-image: linear-gradient(to bottom, #fad7c1, var(--light-brown));
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-@keyframes Slide {
-    from {
-        transform: scale(0);
-    }
-
-    to {
-        transform: scale(1);
-    }
+.animate-in {
+  animation-name: animate-in;
+  animation-duration: 1s;
 }
 
-.welcome>h1 {
-    text-align: center;
-    margin-bottom: var(--spacing-xl);
-    font-family: var(--title-font);
-    color: #3b3732;
+@keyframes animate-in {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }
 
-.welcome>p {
-    text-justify: auto;
-    text-align: justify;
-    margin-bottom: var(--spacing-xl);
+.animate-out {
+  animation-name: animate-out;
+  animation-duration: 0.5s;
+}
+
+@keyframes animate-out {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}
+
+.welcome>.welcome-h1 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  font-family: var(--title-font);
+  color: #3b3732;
+}
+
+.register-p1 {
+  text-justify: auto;
+  text-align: justify;
+  margin-bottom: var(--spacing-xl);
+}
+
+.register-p2 {
+  text-justify: auto;
+  text-align: justify;
+  margin-bottom: 0;
 }
 
 .welcome>button {
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, #fff, #f8eedb);
-    border: 0 solid #e5e7eb;
-    border-radius: .5rem;
-    box-sizing: border-box;
-    color: var(--dark-brown);
-    column-gap: 1rem;
-    cursor: url('../assets/sword_crossing_32x32.png'), default;
-    display: flex;
-    font-family: var(--text-font);
-    font-size: 100%;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 0;
-    outline: 2px solid transparent;
-    padding: 1rem 1.5rem;
-    text-align: center;
-    text-transform: none;
-    transition: all .1s cubic-bezier(.4, 0, .2, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
+  background-color: transparent;
+  border: 0 solid #e5e7eb;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: var(--dark-brown);
+  column-gap: 1rem;
+  cursor: url('../assets/sword_crossing_32x32.png'), default;
+  display: flex;
+  font-family: var(--text-font);
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  outline: 2px solid transparent;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-transform: none;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
 }
 
 .welcome>button:active {
-    background-color: #f3f4f6;
-    box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15), 0px 1px 1px rgba(81, 41, 10, 0.15);
-    transform: translateY(0.125rem);
+  background-color: #f3f4f6;
+  box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15),
+    0px 1px 1px rgba(81, 41, 10, 0.15);
+  transform: translateY(0.125rem);
 }
 
 .welcome>button:focus {
-    box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
+  box-shadow: rgba(72, 35, 7, 0.46) 0 0 0 4px,
+    -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
 }
 
 /* BOUTON BATMAN */
 
 .register-button {
-    border: none;
-    position: relative;
-    width: 200px;
-    height: 201px;
-    padding: 0;
-    z-index: 2;
-    -webkit-mask: url("../assets/castle.png") no-repeat 50% 50%;
-    mask: url("../assets/castle.png") no-repeat 50% 50%;
-    mask-size: 100%;
-    cursor: url('../assets/sword_crossing_32x32.png'), default;
-    transform: scale(0.8);
+  border: none;
+  position: relative;
+  width: 200px;
+  height: 201px;
+  padding: 0;
+  z-index: 2;
+  -webkit-mask: url("../assets/castle.png") no-repeat 50% 50%;
+  mask: url("../assets/castle.png") no-repeat 50% 50%;
+  mask-size: 100%;
+  cursor: url("../assets/sword_crossing_32x32.png"), default;
+  transform: scale(0.8);
 }
 
 .register-button:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    box-shadow: 0px 0 0 0 white;
-    transition: all 2s ease;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0px 0 0 0 rgb(239, 205, 186, 0);
+  transition: all 1s ease-in;
 }
 
 .register-button:hover:after {
-    box-shadow: 0px -13px 56px 12px #ffffffa6;
+  box-shadow: 0px -13px 56px 12px rgb(239, 205, 186, 1);
 }
 
 .register-button .register-span {
-    position: absolute;
-    width: 80%;
-    font-weight: 400;
-    left: 50%;
-    top: 85%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    color: var(--dark-brown);
-    font-family: var(--text-font);
+  position: absolute;
+  width: 80%;
+  font-weight: 400;
+  left: 50%;
+  top: 85%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: var(--dark-brown);
+  font-family: var(--text-font);
+  transition: all 1s ease;
 }
 
 .register-button:hover .register-span {
-    color: var(--light-brown);
+  color: var(--light-brown);
 }
 
 .register-button:before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 100%;
-    background-color: black;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 1s ease;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s ease;
 }
 
 .register-button:hover:before {
-    width: 100%;
+  width: 100%;
 }
 
 .quit-container {
-    width: 100%;
-    height: 3rem;
-    display: flex;
-    justify-content: right;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: right;
 }
 
 .quit {
-    display: flex;
-    height: 2em;
-    width: 70px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
-    letter-spacing: 1px;
-    transition: all 0.2s linear;
-    cursor: url('../assets/sword_crossing_32x32.png'), default;
-    border: none;
-    background: rgb(255, 255, 255);
-    color: var(--dark-brown);
+  display: flex;
+  height: 2em;
+  width: 70px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: url("../assets/sword_crossing_32x32.png"), default;
+  border: none;
+  background: rgb(255, 255, 255);
+  color: var(--dark-brown);
 }
 
 .quit:hover>svg {
-    font-size: 1.2em;
-    transform: translateX(-5px);
+  font-size: 1.2em;
+  transform: translateX(-5px);
 }
 
 .quit:hover {
-    box-shadow: 9px 9px 20px #c9aa86, -9px -9px 20px #f8ead4;
-    transform: translateY(-2px);
+  box-shadow: 9px 9px 20px #c9aa86, -9px -9px 20px #f8ead4;
+  transform: translateY(-2px);
 }

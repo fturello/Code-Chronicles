@@ -1,12 +1,29 @@
 .container {
   display: flex;
-  margin: 10rem;
+  flex-direction: column;
+  padding-left: 12rem;
+  margin-top: 3rem;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.first-line {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.second-line {
+  display: flex;
+  margin-top: 5rem;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 350px;
   height: 450px;
-  background: #fc5e5e;
+  background: #222222;
   position: relative;
   margin: 10px auto;
   box-shadow: 0 30px 7px -5px rgba(0, 0, 0, 0.4);
@@ -21,7 +38,7 @@
   left: 0;
   border-left: 175px solid transparent;
   border-right: 175px solid transparent;
-  border-bottom: 25px solid #fc5e5e;
+  border-bottom: 25px solid #222222;
 }
 
 .card:after {
@@ -33,5 +50,68 @@
   left: 0;
   border-left: 175px solid transparent;
   border-right: 175px solid transparent;
-  border-top: 25px solid #fc5e5e;
+  border-top: 25px solid #222222;
+}
+
+.name {
+  color: #fcfcfc;
+  margin-top: 1rem;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.picture {
+  margin-top: 1rem;
+  height: auto;
+  width: 35%;
+}
+
+.title {
+  margin-top: 1rem;
+  color: #fcfcfc;
+  font-size: 30px;
+  font-weight: 400;
+  border-top: 1px solid #fcfcfc;
+  border-bottom: 1px solid #fcfcfc;
+}
+
+.desc {
+  color: #fcfcfc;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 21px;
+}
+
+.btn-unsubscribe {
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: Karla, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.25rem;
+  width: 15rem;
+  height: 2.5rem;
+  text-align: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 1.7rem;
+}
+
+.btn-unsubscribe:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.btn-unsubscribe:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.btn-unsubscribe:focus-visible {
+  box-shadow: none;
 }
