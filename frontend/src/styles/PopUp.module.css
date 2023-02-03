@@ -1,26 +1,26 @@
 .welcome-container {
-    position: fixed;
-    z-index: 10;
-    backdrop-filter: blur(0.8rem);
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  z-index: 10;
+  backdrop-filter: blur(0.8rem);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .welcome {
-    border-radius: 20px;
-    height:80vh;
-    width: 25vw;
-    font-family: var(--text-font);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: var(--spacing-xl);
-    background-image: linear-gradient(to bottom, #ffddc8, var(--light-brown));
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+  height: 80vh;
+  width: 25vw;
+  font-family: var(--text-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: var(--spacing-xl);
+  background-image: linear-gradient(to bottom, #ffddc8, var(--light-brown));
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .welcome>.popup-h1 {
@@ -75,7 +75,7 @@
 }
 
 .image {
-    width: 100%;
-    border-radius: 20px;
-    margin-bottom: var(--spacing-lg);
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: var(--spacing-lg);
 }

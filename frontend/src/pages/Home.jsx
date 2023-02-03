@@ -31,7 +31,7 @@ function Home() {
       <div className={styles["period-choosed"]}>
         {period === ""
           ? "Cliquez sur la planete pour choisir une période"
-          : `Periode choisie : ${period}`}
+          : `Periode choisie : ${period}`}{" "}
       </div>
       <div className={styles.timer}>
         {start ? <Timer /> : "2023"}

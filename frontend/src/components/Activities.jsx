@@ -15,8 +15,9 @@ function Activities() {
   const [registration, setRegistration] = useState(false);
 
   useEffect(() => {
-    axios.get(`${backEndURL}/activities`)
-      .then((res) => setActivities(res.data))
+    axios
+      .get(`${backEndURL}/activities`)
+      .then((res) => setActivities(res.data));
   }, []);
 
   const handleRegistration = () => {
@@ -41,9 +42,13 @@ function Activities() {
                   <p className={styles["activity-p"]}>{activity.description}</p>
                   <button onClick={handleRegistration} className={styles["activity-button"]}>Ça m'intéresse !</button>
                 </div>
-                <img className={styles["activity-image"]} src={`${backEndURL}/assets/images/${activity.image}`} alt='' />
-              </div>)
-            )}
+                <img
+                  className={styles["activity-image"]}
+                  src={`${backEndURL}/assets/images/${activity.image}`}
+                  alt=""
+                />
+              </div>
+            ))}
         </div>
         <div className={styles.cards}>
           {activities
@@ -58,9 +63,13 @@ function Activities() {
                   <p className={styles["activity-p"]}>{activity.description}</p>
                   <button onClick={handleRegistration} className={styles["activity-button"]}>Ça m'intéresse !</button>
                 </div>
-                <img className={styles["activity-image"]} src={`${backEndURL}/assets/images/${activity.image}`} alt='' />
-              </div>)
-            )}
+                <img
+                  className={styles["activity-image"]}
+                  src={`${backEndURL}/assets/images/${activity.image}`}
+                  alt=""
+                />
+              </div>
+            ))}
         </div>
       </div>
     </div>
