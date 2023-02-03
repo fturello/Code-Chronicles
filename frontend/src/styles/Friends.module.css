@@ -63,7 +63,8 @@
 .picture {
   margin-top: 1rem;
   height: auto;
-  width: 35%;
+  width: 25%;
+  border-radius: 50%;
 }
 
 .title {
@@ -80,6 +81,27 @@
   margin-top: 2rem;
   text-align: center;
   font-size: 21px;
+}
+
+.btn-unsubscribed {
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: Karla, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.25rem;
+  width: 15rem;
+  height: 2.5rem;
+  text-align: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 3.6rem;
 }
 
 .btn-unsubscribe {

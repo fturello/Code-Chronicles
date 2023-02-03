@@ -25,22 +25,28 @@ video {
   height: 77vh;
   animation: portal-animation 15s infinite;
 }
-
-@keyframes portal-animation {
-  0% {
-    filter: hue-rotate(0deg) contrast(3) saturate(1);
+  
+  @keyframes portal-animation {
+    
+    0% {
+      filter: hue-rotate(0deg) contrast(3) saturate(1);
+    }
+    
+    50% {
+      filter: hue-rotate(45deg) contrast(1) saturate(6);
+    }
+    
+    100% {
+      filter: hue-rotate(0deg) contrast(3) saturate(1);
+    }
+    
   }
-
-  50% {
-    filter: hue-rotate(45deg) contrast(1) saturate(6);
-  }
-
-  100% {
-    filter: hue-rotate(0deg) contrast(3) saturate(1);
-  }
-}
-
-/**
-   * Housekeeping
-   * ------------
-  */
+  
+    .stargate__portal video {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    }
+    .stargate__portal:hover video {
+    -webkit-transform:scale(1.25); 
+    transform:scale(1.25);
+    }
