@@ -48,9 +48,7 @@ function Home() {
         <button
           type="button"
           className={styles["btn-travel"]}
-          onClick={() => {
-            onPressTravel;
-          }}
+          onClick={onPressTravel}
         >
           Voyager
         </button>
