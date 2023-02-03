@@ -19,7 +19,7 @@ function Home() {
     );
     setStart(true);
     setTimeout(() => {
-      navigate("/activities");
+      navigate("/intro");
     }, 3000);
   };
 

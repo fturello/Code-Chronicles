@@ -1,5 +1,4 @@
 body {
-  background-color: #c6c7cf;
 }
 
 .container {
@@ -28,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #000;
+  border: 2px solid var(--light);
   cursor: pointer;
   font-family: Karla, sans-serif;
   font-size: 25px;
